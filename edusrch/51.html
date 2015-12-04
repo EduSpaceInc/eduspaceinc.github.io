@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="utf-8" />
+        <title>45:CalcEduSrch</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<script src="js/math.min.js"></script>
+        <script>(function (){ var script = document.createElement("script"); 
+        script.type = "text/javascript"; 
+        script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"; 
+        document.getElementsByTagName("head")[0].appendChild(script);})();</script>
+            </head>     
+<body>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      	  <div class="left_menu"></div>
+	 <div class="top_title" ><a href="#">EduSrch</a></div>
+</div>
+                    
+    <script>
+        function doMath() {
+
+            var ip_1 = parseInt(document.getElementById('input_1').value);
+            var ip_2 = parseInt(document.getElementById('input_2').value);
+            var ip_3 = parseInt(document.getElementById('input_3').value);
+            var ip_4 = parseInt(document.getElementById('input_4').value);
+			 var ip_5 = parseInt(document.getElementById('input_5').value);
+			 var ip_6 = parseInt(document.getElementById('input_6').value);
+	ip_5=math.pow(ip_5,4);
+	ip_6=math.pow(ip_6,4);
+	
+			
+			ans1 = (ip_2*ip_3*ip_4*(ip_5-ip_6));
+            document.getElementById('input_1').value = ans1;
+      
+			
+        }
+   function clean(e) {
+            var tf = document.getElementById(e);
+           
+var regex = /\D/g;
+tf.value = tf.value.replace(regex, ""); 
+document.write(result); 
+
+        }     
+</script>
+<div class="input-group">
+  <span class="input-group-addon">`F`</span>
+  <input type="text" class="form-control" id="input_2" onBlur="doMath();"  onkeyup="clean('input_2');"  >
+  <span class="input-group-addon">`-`</span>
+</div>
+<div class="input-group">
+  <span class="input-group-addon">`sigma`</span>
+  <input type="text" class="form-control" id="input_3" onBlur="doMath();" onKeyUp="clean('input_3');"  >
+  <span class="input-group-addon">`W//m^2-K`</span>
+</div>
+<div class="input-group">
+  <span class="input-group-addon">`A`</span>
+  <input type="text" class="form-control" id="input_4" onBlur="doMath();" onKeyUp="clean('input_4');"  >
+  <span class="input-group-addon">`m^2`</span>
+</div>
+<div class="input-group">
+  <span class="input-group-addon">`T_1`</span>
+  <input type="text" class="form-control" id="input_5" onBlur="doMath();" onKeyUp="clean('input_4');"  >
+  <span class="input-group-addon">`K`</span>
+</div>
+<div class="input-group">
+  <span class="input-group-addon">`T_2`</span>
+  <input type="text" class="form-control" id="input_6" onBlur="doMath();" onKeyUp="clean('input_4');"  >
+  <span class="input-group-addon">`K`</span>
+</div>
+ <div class="input-group">
+  <span class="input-group-addon">`Q`</span>
+  <input type="text" class="form-control" id="input_1" onBlur="doMath();" onKeyUp="clean('input_1');" readonly="true"  >
+  <span class="input-group-addon">`W`</span>
+</div>
+        </div>
+
+
+   
+    <div class="navbar navbar-default navbar-fixed-bottom"><h4><center>&copy;EduSpace |Designed & Developed By Swapnil Nakate</center></h4></div>
+
+
+
+
+
+
+    </body>
+</html>
